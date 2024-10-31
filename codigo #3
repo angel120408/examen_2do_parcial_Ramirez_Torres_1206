@@ -1,0 +1,32 @@
+print(" ")#Espacio entre lineas 
+print("Nombre Del Alumno: Ramirez Torres Angel Manuel")#Nombre del alumno
+print("Grado y Grupo: 3°W")#Grado y grupo del alumno
+print("NO. De Control: 1206")#Muestra el numero de control
+print(" ")#Espacio entre lineas
+#Nos muestra a continuacion las instrucciones del programa a realizar 
+print("-INSTRUCCIONES-")
+print("Escribir un programa que almacene las")
+print("asignaturas de un curso (por ejemplo Matemáticas, Física, Química, Historia y Lengua) ")
+print("en una lista, pregunte al usuario la nota que ha sacado en cada")
+print("asignatura, y después las muestre por pantalla con el mensaje En <asignatura> has sacado <nota> donde <asignatura> es")
+print("cada una des las asignaturas de la lista y <nota> cada una de las correspondientes")
+#Fin de las instrucciones
+print(" ")#Espacio entre lineas }
+
+# Lista de materias
+materias = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+
+#Se crea un diccionario
+calificaciones = {}#Almacena las calificaiones 
+
+#Pregunta que calificacion es la que saco
+i = 0
+while i < len(materias):
+    materia = materias[i]
+    calificacion = float(input(f"Introduce la calificación que has sacado en {materia}: "))
+    calificaciones[materia] = calificacion
+    i += 1
+
+#Nos mostra las calificaciones
+for materia, calificacion in calificaciones.items():
+    print(f"En {materia} has sacado {calificacion}")

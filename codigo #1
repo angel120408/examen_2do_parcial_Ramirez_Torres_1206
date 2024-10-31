@@ -1,0 +1,37 @@
+print(" ")#Espacio entre lineas 
+print("Nombre Del Alumno: Ramirez Torres Angel Manuel")#Nombre del alumno
+print("Grado y Grupo: 3°W")#Grado y grupo del alumno
+print("NO. De Control: 1206")#Muestra el numero de control
+print(" ")#Espacio entre lineas
+#Nos muestra a continuacion las instrucciones del programa a realizar 
+print("-INSTRUCCIONES-")
+print("Escribir un programa que almacene las asignaturas de un curso")
+print("por ejemplo Matemáticas, Física, Química, Historia y Lengua")
+print("en una lista, pregunte al usuario la nota que ha sacado en cada asignatura")
+print("y elimine de la lista las asignaturas aprobadas. Al final el programa debe mostrar")
+print("por pantalla las asignaturas que el usuario tiene que repetir.")
+#Fin de las instrucciones
+print(" ")#Espacio entre lineas 
+
+print("Codigo #1")
+
+print(" ")#Espacio entre lineas 
+
+#Se crea la ista de materias
+materias = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+
+#Esta lista almacena las materias a repetir
+materias_a_repetir = []
+
+# Preguntar al usuario la nota en cada asignatura
+for asignatura in materias:
+    #Pide la calificacion
+    nota = float(input(f"¿Qué calificacion has sacado en {asignatura}? "))
+    
+    #Se agrega una condicion, si la nota es <6 debe de repetir la materia 
+    if nota < 6:
+        materias_a_repetir.append(asignatura)
+
+# Muestra las materias a repetir 
+print("Tienes que repetir las siguientes materias:")
+print(materias_a_repetir) if materias_a_repetir else print("¡Felicidades! Has aprobado todas las materias.")

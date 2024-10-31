@@ -1,0 +1,32 @@
+print(" ")#Espacio entre lineas 
+print("Nombre Del Alumno: Ramirez Torres Angel Manuel")#Nombre del alumno
+print("Grado y Grupo: 3°W")#Grado y grupo del alumno
+print("NO. De Control: 1206")#Muestra el numero de control
+print(" ")#Espacio entre lineas
+#Nos muestra a continuacion las instrucciones del programa a realizar 
+print("-INSTRUCCIONES-")
+print("Escribir un programa que almacene el diccionario")
+print("con los créditos de las asignaturas de un curso {'Matemáticas': 6, 'Física': 4, 'Química': 5} y")
+print("después muestre por pantalla los créditos de cada asignatura en el formato <asignatura>")
+print("tiene <créditos> créditos, donde <asignatura> es")
+print("cada una de las asignaturas del curso, y <créditos> son sus créditos. Al final debe")
+print("mostrar también el número total de créditos del curso.")
+#Fin de las instrucciones
+print(" ")#Espacio entre lineas 
+
+
+materias_con_creditos = { #Se crea el diccionario con sus materias y sus creditos 
+    'Matemáticas': 6,
+    'Física': 4,
+    'Química': 5
+}
+
+total_de_creditos = 0 #Se inicia el total de créditos 
+
+#Nos mostrar los créditos de cada materia y nos calcula el total
+for materia, creditos in materias_con_creditos.items():
+    print(f"{materia} tiene {creditos} créditos.")
+    total_de_creditos += creditos
+
+#Nos muestra el total de credito 
+print(f"El número total de créditos del curso es: {total_de_creditos}")

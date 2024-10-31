@@ -1,0 +1,42 @@
+print(" ")#Espacio entre lineas 
+print("Nombre Del Alumno: Ramirez Torres Angel Manuel")#Nombre del alumno
+print("Grado y Grupo: 3°W")#Grado y grupo del alumno
+print("NO. De Control: 1206")#Muestra el numero de control
+print(" ")#Espacio entre lineas
+#Nos muestra a continuacion las instrucciones del programa a realizar 
+print("-INSTRUCCIONES-")
+print("Escribir un programa que pregunte al usuario su nombre, edad, dirección y")
+print("teléfono y lo guarde en un diccionario. Después debe mostrar por pantalla el")
+print("mensaje <nombre> tiene")
+print("<edad> años, vive en <dirección> y su número de teléfono es")
+print("<teléfono>.")
+#Fin de las instrucciones
+print(" ")#Espacio entre lineas 
+
+# Crear un diccionario vacío 
+persona = {}
+# Solicitar y añadir el nombre
+nombre = input("Introduce el nombre: ")  #introduzca su nombre
+persona['nombre'] = nombre  #nombre al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+print(" ")#crear un espacio entre lineas 
+
+# Solicitar y añadir la edad
+edad = input("Introduce la edad: ")  # Pide que introduzca su edad
+persona['edad'] = edad  # Añade la edad al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+print(" ")#crear un espacio entre lineas 
+
+print(" ")#crear un espacio entre lineas 
+# Solicitar y añadir la direccion
+direccion = input("Introduce tu direccion: ")  # Pide que introduzca su direccion
+persona['direccion'] = direccion  # Añade la direccion al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+print(" ")#crear un espacio entre lineas 
+
+print(" ")#crear un espacio entre lineas 
+# Solicitar y añadir el teléfono
+telefono = input("Introduce el teléfono: ")  # Pide que introduzca su teléfono
+persona['telefono'] = telefono  # Añade el teléfono al diccionario
+print("Contenido del diccionario:", persona)  # Muestra el contenido
+print(" ")#crear un espacio entre lineas 
